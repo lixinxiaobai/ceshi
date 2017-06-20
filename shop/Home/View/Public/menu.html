@@ -1,0 +1,57 @@
+		<!-- Header Menu -->
+		<div class="shop_hd_menu">
+			<!-- 所有商品菜单 -->
+
+			<!-- 首页分类菜单一直显示，子页分类菜单鼠标放上去再显示 -->
+			<div 
+			<if condition="is_home()">
+			class="shop_hd_menu_all_category shop_hd_menu_hover"
+			<else />
+			id="shop_hd_menu_all_category" class="shop_hd_menu_all_category "
+			</if>
+			><!-- 首页去掉 id="shop_hd_menu_all_category" 加上clsss shop_hd_menu_hover -->
+				<div class="shop_hd_menu_all_category_title"><h2 title="所有商品分类"><a href="javascript:void(0);">所有商品分类</a></h2><i></i></div>
+				<div id="shop_hd_menu_all_category_hd" class="shop_hd_menu_all_category_hd">
+					<ul class="shop_hd_menu_all_category_hd_menu clearfix">
+						<!-- 单个菜单项 -->
+						<foreach name="catelist" item="vo">
+						<if condition="$vo['parent_id'] == 0">
+						<li id="cat_1" class="">
+							<h3><a href="{:U('Cate/lists',array('id'=>$vo['id']))}" title="{$vo.name}">{$vo.name}</a></h3>
+							<div id="cat_1_menu" class="cat_menu clearfix" style="">
+								<foreach name="catelist" item="vo2">
+								<if condition="$vo2['parent_id'] == $vo['id']">
+								<dl class="clearfix">
+									<dt><a href="{:U('Cate/lists',array('id'=>$vo2['id']))}" >{$vo2.name}</a></dt>
+									<dd>
+										<foreach name="catelist" item="vo3">
+										<if condition="$vo3['parent_id'] == $vo2['id']">
+										<a href="{:U('Cate/lists',array('id'=>$vo3['id']))}">{$vo3.name}</a>
+										</if>
+										</foreach>
+									</dd>
+								</dl>
+								</if>
+								</foreach>
+							</div>
+						</li>
+						</if>
+						</foreach>
+					</ul>
+				</div>
+			</div>
+			<!-- 所有商品菜单 END -->
+
+			<!-- 普通导航菜单 -->
+			<ul class="shop_hd_menu_nav">
+				<li class="current_link"><a href=""><span>首页</span></a></li>
+				<li class="link"><a href=""><span>团购</span></a></li>
+				<li class="link"><a href=""><span>品牌</span></a></li>
+				<li class="link"><a href=""><span>优惠卷</span></a></li>
+				<li class="link"><a href=""><span>积分中心</span></a></li>
+				<li class="link"><a href=""><span>运动专场</span></a></li>
+				<li class="link"><a href=""><span>微商城</span></a></li>
+			</ul>
+			<!-- 普通导航菜单 End -->
+		</div>
+		<!-- Header Menu End -->

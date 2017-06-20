@@ -1,0 +1,44 @@
+2017-05-31
+Admin/Controllrt/GoodsController.class.php
+Admin/Model/GoodsModel.class.php
+Admin/View/Goods/index.html
+Admin/View/Goods/add.html
+
+2017-06-01
+Admin/Controllrt/GoodsController.class.php
+Admin/Model/GoodsModel.class.php
+Admin/View/Goods/index.html
+Admin/View/Goods/add.html
+Admin/View/Goods/edit.html
+
+2017-06-02
+Admin/Controllrt/GoodsController.class.php
+Admin/View/Goods/index.html
+Admin/View/Goods/edit.html
+Admin/View/Goods/recycle.html
+
+
+2017-06-05
+1.首页分类显示
+2.后台推荐，热销，新品
+Admin/Controller/GoodsController.class.php
+Admin/View/Goods/index
+Home/Controller/IndexController.class.php
+Home/Model/CateModel.class.php
+Home/View/Index/index
+Home/View/Public/header
+Home/View/Public/footer
+shop_goods 表字段增加三个
+is_hot 默认值0
+is_recommend 默认值0
+is_new 默认值0
+
+
+2017-06-06
+1. 首页推荐热销新品
+2. 首页第三区域
+Home/Controller/IndexController.class.php
+Home/View/Index/index.html
+Home/Model/GoodsModel.class.php
+
+

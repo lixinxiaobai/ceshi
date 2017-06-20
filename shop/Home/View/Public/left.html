@@ -1,0 +1,40 @@
+<!-- 热卖推荐商品 -->
+			<div class="shop_bd_list_bk clearfix">
+				<div class="title">热卖推荐商品</div>
+				<div class="contents clearfix">
+					<ul class="clearfix">
+						<foreach name="hot_r" item="vo">
+						<li class="clearfix">
+							<div class="goods_name"><a href="{:U('Goods/detail', array('id'=>$vo['id']))}">{$vo.name}</a></div>
+							<div class="goods_pic"><span class="goods_price">¥ {$vo.price} </span><a href="{:U('Goods/detail', array('id'=>$vo['id']))}"><img src="{$vo.goods_img}" /></a></div>
+							<div class="goods_xiaoliang">
+								<span class="goods_xiaoliang_link"><a href="{:U('Goods/detail', array('id'=>$vo['id']))}">去看看</a></span>
+								<span class="goods_xiaoliang_nums">已销售<strong>99</strong>笔</span>
+							</div>
+						</li>
+						</foreach>
+					</ul>
+				</div>
+			</div>
+			<!-- 热卖推荐商品 -->
+			<div class="clear"></div>
+
+			<!-- 浏览过的商品 -->
+			<div class="shop_bd_list_bk clearfix">
+				<div class="title">浏览过的商品</div>
+				<div class="contents clearfix">
+					<ul class="clearfix">
+						<foreach name="history" item="vo">
+						<li class="clearfix">
+							<div class="goods_name"><a href="">{$vo.name}</a></div>
+							<div class="goods_pic"><span class="goods_price">¥ {$vo.price} </span><a href=""><img src="{$vo.goods_img}" /></a></div>
+							<div class="goods_xiaoliang">
+								<span class="goods_xiaoliang_link"><a href="">去看看</a></span>
+								<span class="goods_xiaoliang_nums">已销售<strong>99</strong>笔</span>
+							</div>
+						</li>
+						</foreach>
+					</ul>
+				</div>
+			</div>
+			<!-- 浏览过的商品 -->

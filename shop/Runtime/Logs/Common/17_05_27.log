@@ -1,0 +1,30 @@
+[ 2017-05-27T18:00:22+08:00 ] 127.0.0.1 /index.php/pass.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Pass
+
+[ 2017-05-27T18:00:23+08:00 ] 127.0.0.1 /index.php/page.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Page
+
+[ 2017-05-27T18:00:24+08:00 ] 127.0.0.1 /index.php/adv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Adv
+
+[ 2017-05-27T18:00:24+08:00 ] 127.0.0.1 /index.php/book.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Book
+
+[ 2017-05-27T18:00:25+08:00 ] 127.0.0.1 /index.php/column.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Column
+

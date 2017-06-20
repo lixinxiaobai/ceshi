@@ -1,0 +1,18 @@
+[ 2017-05-25T18:39:13+08:00 ] 127.0.0.1 /index.php/pass.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Pass
+
+[ 2017-05-25T19:25:36+08:00 ] 192.168.1.129 /myshop/index.php/adin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Adin
+
+[ 2017-05-25T21:27:14+08:00 ] 192.168.1.106 /myshop/index.php/qdmin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Qdmin
+
